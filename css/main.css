@@ -1,0 +1,122 @@
+body{
+    overflow: scroll;
+}
+
+
+.flow-text{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.material-icons{
+    vertical-align: middle;
+}
+
+textarea{
+    height: 20vh;
+    border: 3px solid black;
+}
+
+input[type="number"]{
+    display: inline;
+    width: 50px;
+}
+
+.select-usuarios{
+    display: inline-block;
+    vertical-align: middle;
+    width: 200px;
+}
+
+.select-usuarios *{
+    padding: 0 !important;
+}
+
+.invisible{
+    display: none !important;
+}
+
+thead{
+    font-weight: 700;
+}
+
+table *{
+    text-align: center;
+}
+
+.borda-verde {
+    border: 3px solid green;
+}
+
+.borda-vermelha {
+    border: 3px solid red;
+}
+
+.typer-desativado{
+    background-color: dimgrey;
+}
+
+.erro_frase{
+    color: red;
+}
+
+.slc_usuarios{
+    display: inline-block;
+    height: 45px !important;
+}
+
+.slc_usuarios input{
+    width: auto;
+}
+
+
+.label{
+    color: teal;
+    font-weight: 900;
+    font-size: 25px;
+    margin-left: 20px;
+    vertical-align: -10px;
+}
+
+.text_input{
+    height: 2rem;
+    font-size: 1.5rem !important;
+    vertical-align: baseline;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+select{
+    appearance: none;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    display: inline-block;
+    width: 200px;
+    text-justify: distribute;
+    text-overflow: '';
+    border: 0;
+    border-bottom: 1px solid black;
+    font-size: 1.5rem;
+}
+
+.destaque{
+    border: 2px solid #5a5 !important;
+}
+
+.modal_meu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    z-index: 1; 
+    color: aliceblue;
+}
+
+

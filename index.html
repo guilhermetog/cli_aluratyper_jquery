@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Alura Typer</title>
+        <link rel="stylesheet" href="css/libs/materialize.min.css">
+        <link rel="stylesheet" href="css/libs/selectize.default.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="center">Alura Typer</h1>
+            <div>
+                <p class="flow-text" id="texto_referencia">Buscando frase...</p>
+                <ul class="center">
+                    <li><i class="material-icons small">description</i><span id="numero-palavras">0 </span>palavras</li>
+                    <li><i class="material-icons small">access_time</i><span id="tempo-digitacao">0</span> segundos</li>
+                </ul>
+            </div>
+            <textarea name="typer" id="typer" cols="30" rows="40"></textarea>
+            <div class="controles">
+                <button class="btn-floating btn-large waves-effect waves-light red" id="btn_reiniciar">
+                    <i class="material-icons">restore</i>
+                </button>
+                <button class="btn-floating btn-large waves-effect waves-light green" id="btn_placar">
+                        <i class="material-icons">assignment</i>
+                </button>
+                <span>
+                    <span class="label">Frase:</span>   
+                    <input type="number" name="idTexto" id="id_frase" class="text_input">
+                    <button class="btn-floating waves-effect waves-light cyan" id="btn_frase">
+                        <i class="material-icons">autorenew</i>
+                    </button>
+                </span>
+                <div class="slc_usuarios">
+                    <span class="label">Usuario:</span>
+                    <span class="invisible" id="usuario_novo">
+                        <input type="text" id='novo_usuario' class="text_input destaque">
+                        <button class="btn-floating green" id="btn_novoUsuario" >
+                                <i class="material-icons">done</i>
+                        </button>
+                        <button class="btn-floating red" id="btn_cancelaUsuario">
+                                <i class="material-icons">clear</i>
+                        </button>
+                    </span>
+                    <select id="usuarios">
+                        <option value="base"></option>
+                        <option value="outro" >Outro</option>
+                    </select>
+                </div>
+                <button class="btn-floating btn-large waves-effect waves-light yellow right" id="btn_sync">
+                    <i class="material-icons">import_export</i>
+                </button>
+            </div>
+            <ul class="center">
+                <li><span id="qtCaracteres">0</span> caracteres</li>
+                <li><span id="qtPalavras">0</span> palavras</li>
+            </ul>
+            <div id="placar">
+                <h1 class="center">Placar</h1>
+                <table>
+                    <thead>
+                        <td>Usuario</td>
+                        <td>Nº palavras</td>
+                        <td>Remover?</td>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>    
+            </div>    
+            <div class="modal_meu invisible" id="modal">
+                <H1>Salvando Dados...</h1>
+            </div>    
+        </div>
+        <script src="js/libs/jquery.js"></script>
+        <script src="js/libs/materialize.min.js"></script>
+        <script src="js/libs/selectize.js"></script>
+        <script src="js/usuarios.js"></script>
+        <script src="js/frase.js"></script>
+        <script src="js/placar.js"></script>
+        <script src="js/relogio.js"></script>
+        <script src="js/typer.js"></script>
+        <script src="js/jogo.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
